@@ -9,7 +9,7 @@ secretaria
 
 2.2 como vamos cadastrar os turnos?
 
-2.1 - como vamos cadastrar as turmas. lembrando que a turma é a junção da quantidade de alunos, os professores, o turno e as disciplinas?
+2.3 - como vamos cadastrar as turmas. lembrando que a turma é a junção da quantidade de alunos, os professores, o turno e as disciplinas?
 ex: 1 Ano A manhã, tem uma lista de alunos e professores de diversas matérias, turno: manhã. assim forma uma turma, dai vai gerar o horario das aulas de cada aluno individualemnte
 
 horario:        segunda     | terça    | quarta   | quinta    | sexta
