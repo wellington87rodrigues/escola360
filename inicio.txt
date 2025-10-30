@@ -4,6 +4,18 @@ login
 2 - qual a forma de fazer o esqueceu minha senha?
 
 secretaria
+
+2.1 - como vamos cadastrar as disciplinas?
+
+2.2 como vamos cadastrar os turnos?
+
+2.1 - como vamos cadastrar as turmas. lembrando que a turma é a junção da quantidade de alunos, os professores, o turno e as disciplinas?
+ex: 1 Ano A manhã, tem uma lista de alunos e professores de diversas matérias, turno: manhã. assim forma uma turma, dai vai gerar o horario das aulas de cada aluno individualemnte
+
+horario:        segunda     | terça    | quarta   | quinta    | sexta
+07:30 as 08:30  matemática   português  português  inglês      história
+08:30 as 09:30  matemática   português  português  geografia   edc física
+
 3 - todo cadastro inicial do sistema é feito pela secretaria.
 
 4 - sobre os cadastros, vamos decidir todos os campos necessário.
