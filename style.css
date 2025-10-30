@@ -1,0 +1,173 @@
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ESTRUTURA PRINCIPAL */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f7f8;
+}
+
+/* HEADER */
+.page-header {
+  width: 100%;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.page-header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ÁREA PRINCIPAL DO FORMULÁRIO */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 2.5rem;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.login-box p {
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+/* ESTILIZAÇÃO DOS INPUTS E BOTÃO */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* NOVO: Wrapper para posicionar o ícone dentro do input */
+.password-wrapper {
+  position: relative;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  /* Ajuste o padding direito para o ícone */
+  padding-right: 2.5rem;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* NOVO: Estilo do Ícone de Olho */
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+  height: 20px;
+  width: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.forgot-password a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* MENSAGEM DE CADASTRO */
+.register-message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #e6f0ff;
+  border: 1px solid #cce0ff;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.register-message a {
+  font-weight: bold;
+  color: #25d366;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.whatsapp-icon {
+  /* Estilo básico para o ícone do WhatsApp */
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}

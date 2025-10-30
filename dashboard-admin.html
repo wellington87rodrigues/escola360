@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escola360 - Admin Geral</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+  <div class="dashboard-container">
+
+    <header class="dashboard-header">
+      <div class="logo">Escola360</div>
+      <nav class="user-nav">
+        <span>Olá, Admin Geral!</span>
+        <button id="logoutButton" class="logout-btn">Sair</button>
+      </nav>
+    </header>
+
+    <div class="main-layout">
+      <aside class="sidebar">
+        <nav class="nav-menu">
+          <a href="#" data-section="dashboard" class="nav-link active">Dashboard</a>
+          <a href="#" data-section="cadastros" class="nav-link">Gerenciar ADMs/Gestores</a>
+          <a href="#" data-section="auditoria" class="nav-link">Trilhas de Auditoria (RNF04)</a>
+          <div class="nav-divider"></div>
+          <a href="#" data-section="seguranca" class="nav-link">Configurações de Segurança</a>
+          <a href="#" data-section="exportar" class="nav-link">Exportar Dados (INEP/SEDUC)</a>
+        </nav>
+      </aside>
+
+      <main class="content-area">
+        <div id="dashboard-content">
+          <h1 class="page-title">Dashboard da Administração Geral (Direção)</h1>
+
+          <div class="module-card blue-bg">
+            <h3>Cadastrar Novo Gestor (Secretaria/Coordenação)</h3>
+            <p>Este é o módulo exclusivo para criar os perfis de alto nível na instituição (RF03).</p>
+            <button class="action-btn">Criar Nova Secretaria</button>
+            <button class="action-btn">Criar Novo Coordenador</button>
+          </div>
+
+          <div class="module-card">
+            <h3>Logs de Segurança (RNF04)</h3>
+            <p>Monitoramento das últimas ações críticas no sistema (ex: alteração de notas, exclusão de usuários).</p>
+            <button class="action-btn" style="background-color: #ffc107;">Ver Logs Detalhados</button>
+          </div>
+
+          <div class="module-card">
+            <h3>Conformidade e Exportação (RF06)</h3>
+            <p>Gerenciamento e exportação de dados para órgãos de controle (INEP/SEDUC).</p>
+            <button class="action-btn">Gerar Exportação INEP</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('logoutButton').addEventListener('click', () => window.location.href = 'index.html');
+    // Script simples para simular a navegação
+  </script>
+</body>
+
+</html>

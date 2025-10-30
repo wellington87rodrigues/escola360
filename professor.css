@@ -1,0 +1,95 @@
+/* Estilos reutilizados da secretaria.css, com cores adaptadas */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f8;
+  color: #333;
+}
+.dashboard-header {
+  background-color: #20b2aa;
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.main-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: calc(100vh - 60px);
+}
+.sidebar {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-right: 1px solid #e0e0e0;
+}
+.nav-link {
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  color: #555;
+  border-left: 4px solid transparent;
+}
+.nav-link.active {
+  background-color: #e0fafa;
+  color: #20b2aa;
+  font-weight: bold;
+  border-left-color: #20b2aa;
+}
+.content-area {
+  padding: 2rem;
+  overflow-y: auto;
+}
+.page-title {
+  font-size: 1.75rem;
+  color: #20b2aa;
+  margin-bottom: 1.5rem;
+}
+.module-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+.action-btn {
+  background-color: #20b2aa;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos Específicos do Professor */
+.alert-box {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid;
+}
+.alert-box.yellow {
+  background-color: #fff3cd;
+  border-color: #ffe08a;
+  color: #856404;
+}
+.module-card ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  list-style-type: disc;
+}
+
+.logout-btn {
+  background-color: #ffc107;
+  color: #333;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

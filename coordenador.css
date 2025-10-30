@@ -1,0 +1,92 @@
+/* Estilos reutilizados da secretaria.css, com cores adaptadas */
+body {
+  background-color: #f4f7f8;
+  color: #333;
+}
+.dashboard-header {
+  background-color: #556cff;
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.main-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: calc(100vh - 60px);
+}
+.sidebar {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-right: 1px solid #e0e0e0;
+}
+.nav-link {
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  color: #555;
+  border-left: 4px solid transparent;
+}
+.nav-link.active {
+  background-color: #f0f2ff;
+  color: #556cff;
+  font-weight: bold;
+  border-left-color: #556cff;
+}
+.content-area {
+  padding: 2rem;
+  overflow-y: auto;
+}
+.page-title {
+  font-size: 1.75rem;
+  color: #556cff;
+  margin-bottom: 1.5rem;
+}
+.module-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+.action-btn {
+  background-color: #556cff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos Específicos do Coordenador */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+.stat-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.stat-card.blue {
+  background-color: #556cff;
+}
+.stat-card.red {
+  background-color: #dc3545;
+}
+.stat-card.green {
+  background-color: #28a745;
+}
+.stat-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+}

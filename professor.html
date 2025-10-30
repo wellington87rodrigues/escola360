@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escola360 - Professor</title>
+  <link rel="stylesheet" href="professor.css">
+</head>
+
+<body>
+  <div class="dashboard-container">
+
+    <header class="dashboard-header">
+      <div class="logo">Escola360</div>
+      <nav class="user-nav">
+        <span>Olá, Prof. Teste!</span>
+        <button id="logoutButton" class="logout-btn">Sair</button>
+      </nav>
+    </header>
+
+    <div class="main-layout">
+      <aside class="sidebar">
+        <nav class="nav-menu">
+          <a href="#" data-section="diario" class="nav-link active">Diário de Classe</a>
+          <a href="#" data-section="notas" class="nav-link">Lançamento de Notas</a>
+          <a href="#" data-section="comunicacao" class="nav-link">Comunicação c/ Pais</a>
+          <div class="nav-divider"></div>
+          <a href="#" data-section="minhasturmas" class="nav-link">Minhas Turmas</a>
+        </nav>
+      </aside>
+
+      <main class="content-area">
+        <div id="dashboard-content">
+          <h1 class="page-title">Dashboard do Professor</h1>
+
+          <div class="alert-box yellow">
+            <p><strong>Atenção:</strong> Prazo final para lançamento de notas do 3º Bimestre é amanhã!</p>
+          </div>
+
+          <div class="module-card">
+            <h3>Próxima Aula: Matemática (8º Ano A)</h3>
+            <p>Utilize o botão abaixo para abrir o Diário de Classe e registrar a frequência (RF07).</p>
+            <button class="action-btn">Lançar Frequência</button>
+          </div>
+
+          <div class="module-card">
+            <h3>Notas Pendentes de Lançamento (RF09)</h3>
+            <ul>
+              <li>Geografia (7º C): Falta Nota da P2.</li>
+              <li>Física (9º B): Falta nota do Trabalho.</li>
+            </ul>
+            <button class="action-btn">Lançar Notas</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('logoutButton').addEventListener('click', () => window.location.href = 'index.html');
+  </script>
+</body>
+
+</html>

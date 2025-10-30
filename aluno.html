@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escola360 - Aluno</title>
+  <link rel="stylesheet" href="aluno.css">
+</head>
+
+<body>
+  <div class="dashboard-container">
+
+    <header class="dashboard-header">
+      <div class="logo">Escola360</div>
+      <nav class="user-nav">
+        <span>Olá, Alice S. (8º A)</span>
+        <button id="logoutButton" class="logout-btn">Sair</button>
+      </nav>
+    </header>
+
+    <div class="main-layout">
+      <aside class="sidebar">
+        <nav class="nav-menu">
+          <a href="#" data-section="dashboard" class="nav-link active">Meu Desempenho</a>
+          <a href="#" data-section="boletim" class="nav-link">Notas e Faltas (RF18)</a>
+          <a href="#" data-section="historico" class="nav-link">Histórico Escolar</a>
+          <div class="nav-divider"></div>
+          <a href="#" data-section="avisos" class="nav-link">Avisos e Mural (RF13)</a>
+          <a href="#" data-section="horarios" class="nav-link">Quadro de Horários</a>
+        </nav>
+      </aside>
+
+      <main class="content-area">
+        <div id="dashboard-content">
+          <h1 class="page-title">Dashboard do Aluno</h1>
+
+          <div class="performance-summary">
+            <div class="stat-card average">
+              <h3>Média do Bimestre (Geral)</h3>
+              <p class="stat-number">7.5</p>
+            </div>
+            <div class="stat-card absences">
+              <h3>Faltas no Bimestre</h3>
+              <p class="stat-number">2</p>
+            </div>
+            <div class="stat-card approval">
+              <h3>Status</h3>
+              <p class="stat-number ok">Em Aprovação</p>
+            </div>
+          </div>
+
+          <div class="module-card">
+            <h3>Próximas Avaliações e Avisos Urgentes</h3>
+            <p>Aqui seriam exibidos gráficos e cards de desempenho por disciplina.</p>
+            <button class="action-btn">Ver Detalhes do Boletim</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('logoutButton').addEventListener('click', () => window.location.href = 'index.html');
+  </script>
+</body>
+
+</html>

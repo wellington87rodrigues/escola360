@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escola360 - Coordenação</title>
+  <link rel="stylesheet" href="coordenador.css">
+</head>
+
+<body>
+  <div class="dashboard-container">
+
+    <header class="dashboard-header">
+      <div class="logo">Escola360</div>
+      <nav class="user-nav">
+        <span>Olá, Coordenador(a)!</span>
+        <button id="logoutButton" class="logout-btn">Sair</button>
+      </nav>
+    </header>
+
+    <div class="main-layout">
+      <aside class="sidebar">
+        <nav class="nav-menu">
+          <a href="#" data-section="dashboard" class="nav-link active">Dashboard</a>
+          <a href="#" data-section="desempenho" class="nav-link">Relatórios de Desempenho</a>
+          <a href="#" data-section="frequencia" class="nav-link">Relatórios de Frequência</a>
+          <a href="#" data-section="calendario" class="nav-link">Gerenciar Calendário</a>
+          <div class="nav-divider"></div>
+          <a href="#" data-section="avisos" class="nav-link">Publicar Avisos</a>
+        </nav>
+      </aside>
+
+      <main class="content-area">
+        <div id="dashboard-content">
+          <h1 class="page-title">Dashboard da Coordenação Pedagógica</h1>
+          <div class="grid-cards">
+            <div class="stat-card blue">
+              <h3>Média Geral da Escola</h3>
+              <p class="stat-number">7.8</p>
+            </div>
+            <div class="stat-card red">
+              <h3>Risco de Reprovação por Falta</h3>
+              <p class="stat-number">12%</p>
+            </div>
+            <div class="stat-card green">
+              <h3>Alunos Destaque</h3>
+              <p class="stat-number">54</p>
+            </div>
+          </div>
+
+          <div class="module-card">
+            <h3>Análise Rápida de Desempenho (RF05)</h3>
+            <p>Aqui apareceriam gráficos de comparação de médias entre turmas/disciplinas.</p>
+            <button class="action-btn">Ver Detalhes</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('logoutButton').addEventListener('click', () => window.location.href = 'index.html');
+    // Script simples para simular a navegação (Em um sistema real, seria o JS que você criou para a Secretaria)
+  </script>
+</body>
+
+</html>
