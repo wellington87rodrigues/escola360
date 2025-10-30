@@ -1,0 +1,47 @@
+login
+1 - vamos decidir o método de acesso, pode ser esse que ai está: email/matricula?
+
+2 - qual a forma de fazer o esqueceu minha senha?
+
+secretaria
+3 - todo cadastro inicial do sistema é feito pela secretaria.
+
+4 - sobre os cadastros, vamos decidir todos os campos necessário.
+
+5 - como vamos implementar a feature da Secretarias escolares: emissão de histórico?
+
+6 - como vamos implementar a feature da Secretarias escolares: emissão de declaração?
+
+7 - como vamos implementar a feature da Secretarias escolares: emissão de matricula?
+
+8 - como vamos implementar a feature da Secretarias escolares: emissão de tranferência?
+
+coordenação
+9 - como vamos implementar a feature consolidação de notas?
+
+10 - como vamos implementar a feature consolidação de faltas?
+
+11 - como vamos gerar esse relatório de desempenho?
+
+12 - como vamos gerar esse relatório de frequencia?
+
+13 - como vamos desenvolver esse sistema de calendário escolar? como vamos cirar lembretes automáticos aos responsáveis?
+
+professor
+14 - como vamos desenvolver o sistema diario de classe com chamada. lembrar que tem que ter um campo para colocar a descrição das aulas?
+
+15 - como vamos desenvolver o sistema diario de classe para inserir notas. será bimestre, trimeste ou semestre? o professor insere as notas e a coordenação confirma as notas?
+
+16 - qual será o canal de comunicação entre o professor e os responsáveis pelos alunos?
+ex: fora do sistema por grupo de whatssApp?
+
+17 - quem vai criar os mural/avisos? quem poderá ter acesso aos avisos? o sistema terá um parte da tela de todos os perfis para mostrar todos os avisos?
+teremos que criar um sistema de avisos?
+como vamos segmentar as mensagens?
+comoo vamos confirmar leitura das mensagens?
+
+18 - qual a forma de exportar os dados para os orgão de controle?
+
+19 - como vamos implementar a importação de informações no sistema via planilha.
+
+20 - assinatura digital, qrcode, gerar pdf. acho que esses quesitos só vamos nos preocupar se conseguirmos fazer o básico do sistema funcional e se sobrar tempo.
